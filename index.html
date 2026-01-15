@@ -1,0 +1,2541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARTH Construction | Best Construction Company in Bhopal</title>
+    <meta name="description" content="AARTH Construction - Professional construction company with 11+ years experience. Residential & commercial construction services in Bhopal. Quality, transparency, timely delivery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Primary Colors - Based on AARTH Construction Logo (Orange/Red Theme) */
+            --primary: #FF6B35;        /* Vibrant Orange-Red from construction */
+            --primary-dark: #E55A2B;   /* Darker Orange-Red */
+            --primary-light: #FF8B5C;  /* Lighter Orange */
+            --secondary: #2A2D34;      /* Dark Gray-Blue - Professional & Trust */
+            --secondary-light: #3A3F4A;
+            --accent: #00A8A8;         /* Teal - Growth & Stability */
+            --accent-light: #00C9C9;
+            
+            /* Neutral Colors */
+            --light-gray: #F8F9FA;
+            --medium-gray: #E9ECEF;
+            --dark-gray: #6C757D;
+            --text-dark: #343A40;
+            --white: #FFFFFF;
+            --black: #212529;
+            
+            /* Typography */
+            --heading-font: 'Montserrat', sans-serif;
+            --body-font: 'Open Sans', sans-serif;
+            
+            /* Spacing */
+            --section-padding: 5rem 0;
+            --container-width: 1200px;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--body-font);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--heading-font);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--dark-gray);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            border-radius: var(--border-radius);
+            font-family: var(--heading-font);
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        /* Logo Styling */
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+            margin-right: 12px;
+            transition: var(--transition);
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.05);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo-text span strong {
+            color: var(--secondary);
+        }
+
+        .logo-tagline {
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin: 0 1rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .nav-contact {
+            display: flex;
+            align-items: center;
+            background-color: var(--light-gray);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .nav-contact:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .nav-contact i {
+            font-size: 1.2rem;
+            margin-right: 10px;
+            color: var(--primary);
+        }
+
+        .nav-contact:hover i {
+            color: var(--white);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-info span {
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+        }
+
+        .contact-info strong {
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        .nav-contact:hover .contact-info span,
+        .nav-contact:hover .contact-info strong {
+            color: var(--white);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger .bar {
+            width: 25px;
+            height: 3px;
+            background-color: var(--secondary);
+            margin: 3px 0;
+            transition: var(--transition);
+            border-radius: 3px;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 9rem;
+            padding-bottom: 5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(42, 45, 52, 0.85), rgba(42, 45, 52, 0.9));
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--primary-light);
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .hero-text {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 2rem;
+        }
+
+        .hero-text strong {
+            color: var(--primary-light);
+        }
+
+        .hero-highlight {
+            background-color: rgba(255, 107, 53, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2.5rem 0;
+            text-align: left;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .highlight-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .highlight-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-note {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        /* Who We Serve Section */
+        .serve-section {
+            padding: var(--section-padding);
+            background-color: var(--light-gray);
+        }
+
+        .serve-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .serve-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .serve-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .serve-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+        .serve-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .serve-card p {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+        }
+
+        .serve-note {
+            text-align: center;
+            font-style: italic;
+            color: var(--dark-gray);
+            max-width: 800px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--medium-gray);
+        }
+
+        /* Why Choose Us Section */
+        .why-section {
+            padding: var(--section-padding);
+            background-color: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .why-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border-top: 4px solid transparent;
+        }
+
+        .why-card:hover {
+            border-top-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .why-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .why-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .why-card p {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: var(--section-padding);
+            background-color: var(--light-gray);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(0, 168, 168, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--accent);
+            font-size: 2rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Process Section */
+        .process-section {
+            padding: var(--section-padding);
+            background-color: var(--white);
+        }
+
+        .process-timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .process-timeline::before {
+                content: '';
+                position: absolute;
+                top: 50px;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background-color: var(--medium-gray);
+                z-index: 1;
+            }
+        }
+
+        .process-step {
+            flex: 1;
+            min-width: 200px;
+            max-width: 220px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding-top: 70px;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .process-step h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .process-step p {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: var(--section-padding);
+            background-color: var(--light-gray);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-content h2 {
+            text-align: left;
+        }
+
+        .about-content h2::after {
+            left: 0;
+            transform: none;
+        }
+
+        .about-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            height: 200px;
+            background-image: url('assets/images/placeholder.jpg'); /* REPLACE WITH YOUR ABOUT IMAGE */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .stat-text {
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+            margin-top: 0.5rem;
+        }
+
+        .vision-mission {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .vision-card, .mission-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+        }
+
+        .vision-icon, .mission-icon {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--primary);
+            font-size: 2rem;
+        }
+
+        .mission-icon {
+            background-color: rgba(0, 168, 168, 0.1);
+            color: var(--accent);
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .leader-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .leader-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .leader-image {
+            height: 250px;
+            background-color: var(--secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('assets/images/placeholder.jpg'); /* REPLACE WITH LEADER IMAGE 1 */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .leader-card h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .leader-role {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .leader-card p {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: var(--section-padding);
+            background-color: var(--white);
+        }
+
+        .project-categories {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 0.8rem 1.8rem;
+            background-color: var(--light-gray);
+            border: none;
+            border-radius: 50px;
+            font-family: var(--heading-font);
+            font-weight: 600;
+            color: var(--secondary);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .project-image {
+            height: 250px;
+            overflow: hidden;
+            background-color: var(--light-gray); /* Fallback background */
+        }
+
+        .project-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-img {
+            transform: scale(1.05);
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .project-info p {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tag {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .project-tag.residential {
+            background-color: var(--primary);
+        }
+
+        .project-tag.commercial {
+            background-color: var(--accent);
+        }
+
+        .project-tag.renovation {
+            background-color: #9B59B6;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: var(--section-padding);
+            background-color: var(--light-gray);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--box-shadow);
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-quote {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: rgba(255, 107, 53, 0.2);
+            font-size: 3rem;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            border-top: 1px solid var(--medium-gray);
+            padding-top: 1.5rem;
+            color: var(--primary);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: var(--section-padding);
+            background-color: var(--white);
+        }
+
+        .faq-grid {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--medium-gray);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background-color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background-color: var(--light-gray);
+        }
+
+        .faq-question h3 {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: var(--secondary);
+        }
+
+        .faq-question i {
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+            background-color: var(--light-gray);
+        }
+
+        .faq-answer.active {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            margin-bottom: 0;
+            color: var(--dark-gray);
+        }
+
+        /* Guarantee Section */
+        .guarantee-section {
+            padding: var(--section-padding);
+            background-color: var(--light-gray);
+        }
+
+        .guarantee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .guarantee-item {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .guarantee-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .guarantee-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .guarantee-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .guarantee-item p {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+        }
+
+        .guarantee-note {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            border-top: 4px solid var(--primary);
+        }
+
+        .guarantee-note p {
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: var(--section-padding);
+            background-color: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-card {
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .contact-card:hover {
+            background-color: var(--white);
+            box-shadow: var(--box-shadow);
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-card p {
+            color: var(--dark-gray);
+            margin-bottom: 0;
+        }
+
+        .seo-content {
+            padding: 2rem;
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary);
+        }
+
+        .seo-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .seo-content p {
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .contact-form {
+            background-color: var(--light-gray);
+            border-radius: var(--border-radius);
+            padding: 2.5rem;
+            box-shadow: var(--box-shadow);
+        }
+
+        .contact-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+
+        .contact-form > p {
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--medium-gray);
+            border-radius: var(--border-radius);
+            font-family: var(--body-font);
+            font-size: 1rem;
+            color: var(--text-dark);
+            transition: var(--transition);
+            background-color: var(--white);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 4rem 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo-img {
+            height: 60px;
+            width: auto;
+            margin-right: 15px;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-logo .logo-circle {
+            display: none;
+        }
+
+        .footer-logo .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-logo .logo-text span {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .footer-logo .logo-text p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 0;
+        }
+
+        .footer-about {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-col h3 {
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+
+        .footer-contact p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .footer-contact i {
+            margin-right: 10px;
+            color: var(--primary);
+            width: 20px;
+            flex-shrink: 0;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            text-align: center;
+        }
+
+        .footer-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-stats span {
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .divider {
+            color: var(--primary);
+        }
+
+        .footer-copyright {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .footer-keywords span {
+            background-color: rgba(255,255,255,0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .process-timeline::before {
+                display: none;
+            }
+            
+            .process-step {
+                padding-top: 0;
+                max-width: 100%;
+            }
+            
+            .step-number {
+                position: relative;
+                left: 0;
+                transform: none;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                right: -100%;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                padding: 2rem 0;
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+            
+            .nav-item {
+                margin: 1rem 0;
+            }
+            
+            .nav-contact {
+                display: none;
+            }
+            
+            .logo-img {
+                height: 45px;
+            }
+            
+            .logo-text span {
+                font-size: 1.2rem;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 1rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .vision-mission {
+                grid-template-columns: 1fr;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .footer-logo {
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-logo-img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .section-title::after {
+                width: 60px;
+            }
+            
+            .hero {
+                padding-top: 8rem;
+                padding-bottom: 3rem;
+            }
+            
+            .hero-highlight {
+                padding: 1rem;
+            }
+            
+            .highlight-price {
+                font-size: 1.7rem;
+            }
+            
+            .process-timeline {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .process-step {
+                max-width: 100%;
+                width: 100%;
+            }
+            
+            .logo-img {
+                height: 40px;
+            }
+            
+            .logo-text span {
+                font-size: 1rem;
+            }
+            
+            .logo-tagline {
+                font-size: 0.7rem;
+            }
+            
+            .footer-logo-img {
+                height: 50px;
+            }
+            
+            .whatsapp-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .project-categories {
+                gap: 0.5rem;
+            }
+            
+            .category-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+            
+            .serve-card, .why-card, .service-card, .guarantee-item {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .logo-img {
+                height: 35px;
+                margin-right: 8px;
+            }
+            
+            .logo-text span {
+                font-size: 0.9rem;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-logo-img {
+                height: 40px;
+            }
+        }
+        .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-logo {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  background: #f4b400;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <img src="images/logo.png" alt="Company Logo" class="hero-logo">
+    <h1>Building the Future with Strength</h1>
+    <p>Quality Construction • Trusted Excellence</p>
+    <a href="#contact" class="hero-btn">Get Quote</a>
+  </div> -->
+</section>
+
+    
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <!-- Logo Image -->
+                    <!-- REPLACE logo.png.jpeg WITH YOUR ACTUAL LOGO IN assets/images/ -->
+                    <img src="logo.jpeg" alt="AARTH Construction Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span>AARTH <strong>CONSTRUCTION</strong></span>
+                        <div class="logo-tagline">Engineering Excellence</div>
+                    </div>
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="contact-info">
+                        <span>Call Us Now</span>
+                        <strong>+91 78801 23098</strong>
+                    </div>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Hero Video Background -->
+        <!-- REPLACE assets/videos/hero-video.mp4 WITH YOUR ACTUAL HERO VIDEO -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">We Are a Professional Construction Company</h1>
+                <h2 class="hero-subtitle">Creating Strong Foundations for a Better Tomorrow</h2>
+                <p class="hero-text">AARTH Construction is a full-service construction company delivering <strong>high-quality residential, commercial, and renovation projects</strong> with precision and professionalism. Backed by <strong>11+ years of experience</strong> and <strong>100+ successfully completed projects</strong>, we transform ideas into durable, elegant, and value-driven spaces.</p>
+                
+                <div class="hero-highlight">
+                    <div class="highlight-item">
+                        <span class="highlight-price">Starting @ ₹1350 / Sq.ft</span>
+                        <span class="highlight-note">Premium Construction | Transparent Pricing | Limited Time Offer</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Book a Free Site Visit & Consultation Today</a>
+                    <a href="#projects" class="btn btn-secondary">View Our Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Core Services</h2>
+            <p class="section-subtitle">End-to-end construction solutions with FREE architectural design.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>Residential Construction</h3>
+                    <p>
+                      Quality residential construction for homes, villas, and apartments with strong structures and timely delivery.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-house-user"></i>
+                    </div>
+                    <h3>Commercial Construction</h3>
+                    <p>Professional commercial construction for offices, shops, and business spaces with smart planning.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Interior & Exterior Work</h3>
+                    <p>Complete interior and exterior work including design, finishing, elevation, and renovation solutions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Farmhouse, Villa & Cottage Development</h3>
+                    <p>Custom farmhouse, villa, and cottage development with premium design and natural surroundings.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Architectural Design & Project Planning</h3>
+                    <p>Expert architectural design and project planning for efficient layouts and smooth execution.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Estimation & Project Planning</h3>
+                    <p>Accurate cost estimation, material planning, and execution scheduling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Why Choose Us -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">Why AARTH Construction is the Right Choice</h2>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-number">11+</div>
+                    <h3>Years of Industry Experience</h3>
+                    <p>Our decade-long journey reflects consistent growth, technical learning, and satisfied clients.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-number">100+</div>
+                    <h3>Projects Delivered Successfully</h3>
+                    <p>Residential homes, apartments, commercial buildings, and renovation works executed with excellence.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>End-to-End Construction Solutions</h3>
+                    <p>From design and estimation to construction and finishing—we handle everything under one roof.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Transparent Costing & Honest Communication</h3>
+                    <p>No hidden charges. Clear BOQs. Regular progress updates.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Quality Materials & Skilled Team</h3>
+                    <p>We work with trusted suppliers, certified materials, and experienced engineers & supervisors.</p>
+                </div>
+                
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Timely Delivery Commitment</h3>
+                    <p>We respect your time and investment, ensuring project completion as per schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+   
+    <!-- Process -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">Our Construction Process</h2>
+            <p class="section-subtitle">A systematic approach ensures smooth execution and complete client satisfaction</p>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Initial Consultation & Site Visit</h3>
+                    <p>Understanding your requirements and site evaluation</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Design, Planning & Cost Estimation</h3>
+                    <p>Architectural design, material selection and transparent costing</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Material Selection & Scheduling</h3>
+                    <p>Quality material procurement and project timeline planning</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Construction & Quality Monitoring</h3>
+                    <p>Expert execution with regular quality checks and updates</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Final Inspection & Handover</h3>
+                    <p>Comprehensive quality check and project handover with documentation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>AARTH Construction was founded with a clear vision—to deliver <strong>reliable, durable, and value-driven construction solutions</strong>. Over the last <strong>11 years</strong>, we have earned trust through honest practices, technical excellence, and customer-focused execution.</p>
+                    <p>We believe buildings should stand strong not only structurally but also in the trust they represent.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">11+</div>
+                            <div class="stat-text">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-text">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-text">Client Support</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="about-image"> -->
+                    <div class="about-bg-video">
+    <video autoplay muted loop playsinline>
+        <source src="3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+                    <!-- About Us Image - REPLACE WITH YOUR ACTUAL ABOUT IMAGE -->
+                <!-- </div> -->
+            </div>
+            
+            <!-- Vision & Mission -->
+            <div class="vision-mission">
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become one of the most trusted and respected construction companies by delivering consistent quality, innovation, and customer satisfaction.</p>
+                </div>
+                
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To provide transparent, cost-effective, and high-quality construction services while maintaining the highest standards of safety, ethics, and professionalism.</p>
+                </div>
+            </div>
+            
+            <!-- Leadership Team -->
+            <div class="leadership-section">
+                <h2 class="section-title">Leadership Team</h2>
+                
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <div class="leader">
+                            <!-- REPLACE WITH LEADER IMAGE 1 -->
+                        </div>
+                        <h3>Mr. Pradeep Vishwakarma</h3>
+                        <p class="leader-role">Co-Founder | Construction & Project Execution</p>
+                        <p>With hands-on experience in on-site execution and quality control, ensures that every project meets structural and workmanship standards.</p>
+                    </div>
+                    
+                    <div class="leader-card">
+                        <div class="leader">
+                            <!-- REPLACE WITH LEADER IMAGE 2 -->
+                        </div>
+                        <h3>Mr. Anurag Soni</h3>
+                        <p class="leader-role">Co-Founder | Planning & Operations</p>
+                        <p>Specializing in project planning, estimation, and coordination, ensures timely delivery, cost control, and seamless client communication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <p class="section-subtitle">Our work spans across residential, commercial, and renovation projects</p>
+            
+            <div class="project-categories">
+                <button class="category-btn active" data-category="all">All Projects</button>
+                <button class="category-btn" data-category="residential">Residential</button>
+                <button class="category-btn" data-category="commercial">Commercial</button>
+                <button class="category-btn" data-category="renovation">Renovation</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 - Residential -->
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <!-- REPLACE WITH PROJECT IMAGE 1 -->
+                        <img src="s1.png" alt="Modern Villa Construction" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Modern Villa Construction</h3>
+                        <p>Independent house with contemporary design, premium finishes and smart home features.</p>
+                        <div class="project-tag residential">Residential</div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Commercial -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <!-- REPLACE WITH PROJECT IMAGE 2 -->
+                        <img src="s2.jpg" alt="Corporate Office Complex" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Corporate Office Complex</h3>
+                        <p>Multi-story office building with modern facilities, parking and energy-efficient design.</p>
+                        <div class="project-tag commercial">Commercial</div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - Renovation -->
+                <div class="project-card" data-category="renovation">
+                    <div class="project-image">
+                        <!-- REPLACE WITH PROJECT IMAGE 3 -->
+                        <img src="s3.jpg" alt="Heritage Home Restoration" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Heritage Home Restoration</h3>
+                        <p>Complete renovation of a heritage property with structural reinforcement and modern amenities.</p>
+                        <div class="project-tag renovation">Renovation</div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 - Residential -->
+                <div class="project-card" data-category="residential">
+                    <div class="project-image">
+                        <!-- REPLACE WITH PROJECT IMAGE 4 -->
+                        <img src="s4.jpg" alt="Luxury Apartment Building" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Luxury Apartment Building</h3>
+                        <p>Multi-unit residential complex with amenities, security and modern architecture.</p>
+                        <div class="project-tag residential">Residential</div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 - Commercial -->
+                <div class="project-card" data-category="commercial">
+                    <div class="project-image">
+                        <!-- REPLACE WITH PROJECT IMAGE 5 -->
+                        <img src="s5.jpg" alt="Premium Retail Showroom" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Premium Retail Showroom</h3>
+                        <p>Commercial retail space with glass facade, interior branding and customer flow optimization.</p>
+                        <div class="project-tag commercial">Commercial</div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 - Renovation -->
+                <div class="project-card" data-category="renovation">
+                    <div class="project-image">
+                        <!-- REPLACE WITH PROJECT IMAGE 6 -->
+                        <img src="s6.jpg" alt="Office Interior Upgrade" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Office Interior Upgrade</h3>
+                        <p>Complete interior renovation of corporate office with modern workstations and collaborative spaces.</p>
+                        <div class="project-tag renovation">Renovation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"From Planning to Handover – Completely Stress-Free. We hired AARTH Construction for our residential house near Ayodhya Bypass. From the first meeting to final handover, everything was well-planned and transparent. The quality of construction exceeded our expectations, and the team delivered on time."</p>
+                    <div class="testimonial-author">
+                        <strong>— Residential Client, Bhopal</strong>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, Honest & Reliable Builders. As a commercial property owner, timely delivery and cost control were very important for us. AARTH Construction handled everything professionally, kept us informed at every stage, and delivered exactly what was promised."</p>
+                    <div class="testimonial-author">
+                        <strong>— Commercial Project Client, Bhopal</strong>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Quality Construction with Clear Communication. The team was very cooperative and guided us properly regarding materials, design, and budget. No hidden costs and very honest dealing. Highly recommended construction company in Bhopal."</p>
+                    <div class="testimonial-author">
+                        <strong>— Homeowner, Madhya Pradesh</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the construction cost per sq.ft in Bhopal?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Construction cost usually starts from <strong>₹1350 per sq.ft</strong> and may vary depending on design, material quality, location, and project requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How much time does it take to complete a residential project?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>On average, a standard residential house takes <strong>6 to 10 months</strong>, depending on project size, design complexity, and approvals.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide material specifications and agreements?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. We provide <strong>clear material specifications, BOQs, and written agreements</strong> before starting the project to maintain transparency.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you handle both residential and commercial projects?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We have extensive experience in <strong>residential homes, apartments, offices, shops, and commercial complexes</strong>.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer site visits and consultations?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. We offer <strong>free site visits and initial consultations</strong> in and around Bhopal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Guarantee -->
+    <section class="guarantee-section">
+        <div class="container">
+            <h2 class="section-title">Our Commitment to You</h2>
+            
+            <div class="guarantee-grid">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Quality Materials Only</h3>
+                    <p>Use of trusted brands and approved materials</p>
+                </div>
+                
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges or surprises</p>
+                </div>
+                
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Written Agreement</h3>
+                    <p>Clear scope, cost, and timeline defined</p>
+                </div>
+                
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Experienced Supervision</h3>
+                    <p>Skilled engineers & site supervisors</p>
+                </div>
+                
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Timely Delivery</h3>
+                    <p>Planned execution with milestone tracking</p>
+                </div>
+                
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>We build long-term trust, not just buildings</p>
+                </div>
+            </div>
+            
+            <div class="guarantee-note">
+                <p>We don't just construct structures—we build <strong>confidence, safety, and lasting relationships</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Strong Together</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Office Address</h3>
+                        <p>Shop No. 115 A, Sagar High Street,<br>
+                        Ayodhya Bypass, Near D-Mart, Bhopal</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+91 78801 23098<br>
+                        +91 78801 23097</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Working Hours</h3>
+                        <p>Monday – Saturday<br>
+                        10:00 AM – 7:00 PM</p>
+                    </div>
+                    
+                    <div class="seo-content">
+                        <h3>Best Construction Company in Bhopal</h3>
+                        <p>If you are searching for the <strong>best construction company in Bhopal</strong>, AARTH Construction stands as a reliable and experienced choice. Located near <strong>Ayodhya Bypass, Bhopal</strong>, we specialize in <strong>residential and commercial construction services</strong> with a proven track record of quality, transparency, and timely delivery.</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us Your Project Details</h3>
+                    <p>Submit Your Details & Our Team Will Contact You Shortly</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Mobile Number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="projectType" name="projectType" required>
+                                <option value="" disabled selected>Project Type</option>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="renovation">Renovation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="location" name="location" placeholder="Location" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Message / Requirement Details" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Submit Details</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <!-- REPLACE WITH YOUR ACTUAL LOGO IN assets/images/ -->
+                        <img src="assets/images/placeholder.jpg" alt="AARTH Construction Logo" class="footer-logo-img">
+                        <div class="logo-text">
+                            <span>AARTH <strong>CONSTRUCTION</strong></span>
+                            <p>Engineering Excellence. Building Trust for Life.</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">AARTH Construction is a full-service construction company delivering high-quality residential, commercial, and renovation projects with precision and professionalism.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Residential Construction</a></li>
+                        <li><a href="#">Commercial Construction</a></li>
+                        <li><a href="#">Interior Design</a></li>
+                        <li><a href="#">Renovation & Remodeling</a></li>
+                        <li><a href="#">Project Estimation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Shop No. 115 A, Sagar High Street, Ayodhya Bypass, Bhopal</p>
+                        <p><i class="fas fa-phone-alt"></i> +91 78801 23098</p>
+                        <p><i class="fas fa-phone-alt"></i> +91 78801 23097</p>
+                        <p><i class="fas fa-envelope"></i> info@aarthconstruction.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-stats">
+                    <span>11+ Years Experience</span>
+                    <span class="divider">|</span>
+                    <span>100+ Projects Delivered</span>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>© <span id="currentYear"></span> All Rights Reserved | AARTH Construction | Best Construction Company in Bhopal</p>
+                </div>
+                
+                <div class="footer-keywords">
+                    <span>Builder in Bhopal</span>
+                    <span>Residential construction in Bhopal</span>
+                    <span>Commercial construction services in MP</span>
+                    <span>Construction company near Ayodhya Bypass</span>
+                    <span>House construction cost in Bhopal</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/917880123098?text=Hello%20AARTH%20Construction%2C%20I%20am%20interested%20in%20construction%20services.%20Please%20contact%20me." class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle current FAQ
+                answer.classList.toggle('active');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+                
+                // Close other FAQs
+                document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                    if (otherAnswer !== answer) {
+                        otherAnswer.classList.remove('active');
+                        const otherIcon = otherAnswer.previousElementSibling.querySelector('i');
+                        otherIcon.classList.remove('fa-chevron-up');
+                        otherIcon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+        
+        // Project filtering
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+                
+                // Filter projects
+                const category = button.getAttribute('data-category');
+                const projects = document.querySelectorAll('.project-card');
+                
+                projects.forEach(project => {
+                    if (category === 'all' || project.getAttribute('data-category') === category) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your inquiry! Our team will contact you shortly.');
+            contactForm.reset();
+        });
+        
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
